@@ -1,5 +1,11 @@
 ## Docker + Laravel6系　＋ React + ts
 
+### command
+
+コンテナの中に入る
+
+`docker compose exec app bash`
+
 ### 環境構築参考
 - 絶対に失敗しないDockerでLaravel + Vue.jsの開発環境（LEMP環境）を構築する方法〜MacOS Intel Chip対応〜
   - https://github.com/shimotaroo/docker-laravel-vuejs-sample
