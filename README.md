@@ -1,4 +1,4 @@
-## Docker + Laravel6系　＋ React + ts
+## Docker + Laravel6系 ＋ React + ts
 
 ### command
 
