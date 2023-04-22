@@ -9,10 +9,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ mix('/js/index.js') }}"></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -22,5 +18,6 @@
 </head>
 <body>
     <div id="app"></div>
+    <script src="{{ mix('/js/index.js') }}"></script>
 </body>
 </html>
