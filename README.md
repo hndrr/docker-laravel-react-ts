@@ -2,14 +2,12 @@
 
 ### command
 
-build
-https://github.com/docker/compose/issues/8449
-
-ハイフン付きの `sudo docker-compose build` でうまくいった
+build error: https://github.com/docker/compose/issues/8449 
+- ハイフン付きの `sudo docker-compose build` でうまくいった
 
 コンテナの中に入る
 
-`docker compose exec app bash`
+- `docker compose exec app bash`
 
 ### 環境構築参考
 - 絶対に失敗しないDockerでLaravel + Vue.jsの開発環境（LEMP環境）を構築する方法〜MacOS Intel Chip対応〜
