@@ -2,6 +2,11 @@
 
 ### command
 
+build
+https://github.com/docker/compose/issues/8449
+
+ハイフン付きの `sudo docker-compose build` でうまくいった
+
 コンテナの中に入る
 
 `docker compose exec app bash`
