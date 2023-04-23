@@ -2,12 +2,42 @@
 
 ### command
 
-build error: https://github.com/docker/compose/issues/8449 
-- ハイフン付きの `sudo docker-compose build` でうまくいったようなきがするが `docker pull mysql/mysql-server:8.0` pullしてきたほうが通るかも
+ build
+ `sudo docker-compose build`
 
-コンテナの中に入る
+build error: https://github.com/docker/compose/issues/8449 
+- ハイフン付きの `sudo docker-compose build` でうまくいったような気がするが `docker pull mysql/mysql-server:8.0` でpullしてきたほうが通るかも
+
+ 起動
+
+- `sudo docker-compose up -d`
+
+ ステータス確認
+
+- `docker-compose ps`
+
+ コンテナの中に入る
 
 - `docker compose exec app bash`
+- `docker compose exec db bash`
+
+ migration
+
+- `php artisan migrate`
+- `php artisan migrate --seed`
+
+ migration状況確認
+
+- `php artisan migrate:status`
+
+キャッシュ削除
+
+- `php artisan cache:clear`
+- `php artisan config:clear`
+
+ コンテナリビルド
+
+- `docker-compose --no-cache`
 
 ### 環境構築参考
 - 絶対に失敗しないDockerでLaravel + Vue.jsの開発環境（LEMP環境）を構築する方法〜MacOS Intel Chip対応〜
