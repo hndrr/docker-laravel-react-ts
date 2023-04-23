@@ -1,17 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import About from "./components/About";
 import NavBar from "./components/NavBar";
 import User from "./components/User";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./components/Home";
 
 const App: React.FC = () => {
     return (
         <BrowserRouter>
             <NavBar />
-            Home
             <Routes>
-                <Route path="/" />
+                <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/user" element={<User />} />
             </Routes>

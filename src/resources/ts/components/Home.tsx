@@ -7,6 +7,6 @@ const Title = styled.h1`
     color: palevioletred;
 `;
 
-const About = () => <Title>About</Title>;
+const Home = () => <Title>Home</Title>;
 
-export default About;
+export default Home;

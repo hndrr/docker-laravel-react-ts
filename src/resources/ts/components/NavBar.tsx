@@ -1,18 +1,25 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+const NavList = styled.li`
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 10px;
+`;
 
 const NavBar = () => (
     <nav>
         <ul className="nav">
-            <li>
+            <NavList>
                 <Link to="/">Home</Link>
-            </li>
-            <li>
+            </NavList>
+            <NavList>
                 <Link to="/about">About</Link>
-            </li>
-            <li>
+            </NavList>
+            <NavList>
                 <Link to="/user">User</Link>
-            </li>
+            </NavList>
         </ul>
     </nav>
 );
