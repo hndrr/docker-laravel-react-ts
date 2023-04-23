@@ -28,10 +28,9 @@
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.15.2",
         "sass-loader": "^13.2.2",
+        "styled-components": "^5.3.10",
         "ts-loader": "8.2.0",
-        "typescript": "^5.0.4"
-    },
-    "dependencies": {
+        "typescript": "^5.0.4",
         "vue-template-compiler": "^2.7.14"
     }
 }
