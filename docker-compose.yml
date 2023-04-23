@@ -47,5 +47,19 @@ services:
       TZ: 'Asia/Tokyo'
     volumes:
       - mysql-volume:/var/lib/mysql
-      - ./mysql/logs:/var/log/mysql  
-      - ./init-sql:/docker-entrypoint-initdb.d
+      - .docker/mysql/logs:/var/log/mysql  
+      - .docker/mysql/init-sql:/docker-entrypoint-initdb.d
+
+  pma:
+    build:
+      context: .
+      dockerfile: ./docker/pma/Dockerfile
+    container_name: pma
+    depends_on:
+      - db
+    ports:
+      - "8888:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: ${DB_USER}
+      PMA_PASSWORD: ${DB_PASSWORD}
