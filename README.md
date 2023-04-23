@@ -3,7 +3,7 @@
 ### command
 
 build error: https://github.com/docker/compose/issues/8449 
-- ハイフン付きの `sudo docker-compose build` でうまくいった
+- ハイフン付きの `sudo docker-compose build` でうまくいったようなきがするが `docker pull mysql/mysql-server:8.0` pullしてきたほうが通るかも
 
 コンテナの中に入る
 
